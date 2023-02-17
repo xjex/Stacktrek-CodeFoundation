@@ -1,13 +1,16 @@
 # Code Foundation Javascript
 
 ## Scopes
-- Printing to Console
+- [Printing to Console](## Printing "Hello World!" to console)
 - Commenting in JavaScript
 - Variables
 - Data types
 - Arithmetic Operators
 - String Manipulation
-- Conditionals
+- Conditional Statements
+- Loops
+- Functions 
+- Object-Oriented Programming
 
 ---------------------------------------
 
