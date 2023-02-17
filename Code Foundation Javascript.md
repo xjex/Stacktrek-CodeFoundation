@@ -1,7 +1,7 @@
 # Code Foundation Javascript
 
 ## Scopes
-- [Printing to Console](## Printing "Hello World!" to console)
+- [Printing to Console](#Printing-"Hello-World!"-to-console)
 - Commenting in JavaScript
 - Variables
 - Data types
