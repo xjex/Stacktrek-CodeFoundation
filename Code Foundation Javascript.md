@@ -349,7 +349,7 @@ let x = 100 / 50 * 3;
 # String Manipulation in JavaScript
 JavaScript provides several built-in methods for manipulating strings. Some of the most commonly used ones include:
 
-1. Concatenation
+## Concatenation
 To combine two or more strings in JavaScript, you can use the concatenation operator + or the concat() method.
 
 ```
@@ -366,23 +366,25 @@ const result2 = str3.concat(' ', str4);
 console.log(result2); // Output: "Goodbye World"
 ```
 
-2. Length
+##  Length
 You can find the length of a string in JavaScript using the length property.
 
 
 ```
 const str = 'Hello World';
 console.log(str.length); // Output: 11
-3. Substring
+```
+
+##  Substring
 To extract a portion of a string, you can use the substring() method.
 
-```
+
 ```
 const str = 'Hello World';
 const result = str.substring(0, 5);
 console.log(result); // Output: "Hello"
 ```
-4. Replace
+## Replace
 To replace a substring with another substring in a string, you can use the replace() method.
 
 
@@ -391,7 +393,7 @@ const str = 'Hello World';
 const result = str.replace('World', 'Universe');
 console.log(result); // Output: "Hello Universe"
 ```
-5. Trim
+##  Trim
 To remove whitespace from the beginning and end of a string, you can use the trim() method.
 
 
