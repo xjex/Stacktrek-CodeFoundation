@@ -444,7 +444,7 @@ Here is an example of an ```else if``` statement that checks if a number is betw
 ```
 let number = 7;
 
-if (number &lt; 5) {
+if (number < 5) {
   console.log("The number is less than 5");
 } else if (number >; 10) {
   console.log("The number is greater than 10");
@@ -506,7 +506,7 @@ for (initialization; condition; increment) {
 Here's an example that prints the numbers 1 through 5 using a ```for``` loop:
 
 ```
-for (let i = 1; i &lt;= 5; i++) {
+for (let i = 1; i <= 5; i++) {
   console.log(i);
 }
 ```
@@ -523,7 +523,7 @@ while (condition) {
 Here's an example that prints the numbers 1 through 5 using a ```while``` loop:
 ```
 let i = 1;
-while (i &lt;= 5) {
+while (i <= 5) {
   console.log(i);
   i++;
 }
@@ -544,7 +544,7 @@ let i = 1;
 do {
   console.log(i);
   i++;
-} while (i &lt;= 5);
+} while (i <= 5);
 ```
 
 ## ```for...in``` Loop
@@ -733,7 +733,7 @@ class BankAccount {
     };
 
     this.withdraw = amount =>; {
-      if (amount >; 0 &amp;&amp; amount &lt;= _balance) {
+      if (amount >; 0 &&;&&; amount <= _balance) {
         _balance -= amount;
       }
     };
