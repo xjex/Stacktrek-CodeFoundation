@@ -147,7 +147,7 @@ This will update the value of `greeting.message` without returning errors.
 
 -----------------------------------
 
-## [Data types] (https://www.w3schools.com/js/js_datatypes.asp)
+## [Data types](https://www.w3schools.com/js/js_datatypes.asp)
 
 JavaScript has 8 data types
 
