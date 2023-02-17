@@ -195,5 +195,12 @@ const date = new Date("2022-03-25");
 
 | Symbol | Description |
 | ----------- | ----------- |
-|+ | Addition|
-| ----------- | ----------- |
+|`+` | Addition|
+|`-` | Subtraction|
+|`*` | Multiplication|
+|`**` | Exponential(ES2016)|
+|`/` | Division|
+|`%` | Modulus(Remainder)|
+|`++` | Increment|
+|`--`| Decrement|
+
