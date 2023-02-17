@@ -661,3 +661,233 @@ function higherOrderFunction(func) {
 
 const doubledSum = higherOrderFunction(add);
 ```
+--------------------------------
+
+# Object-Oriented Programming in JavaScript
+
+Object-Oriented Programming (OOP) is a programming paradigm that aims to represent real-world objects, concepts, or entities in software by using objects, classes, and methods. JavaScript is a multi-paradigm language that supports OOP, and you can use it to create classes, objects, and methods just like you would in other OOP languages like Java, C++, or Python.
+
+## Classes
+
+In JavaScript, a class is a blueprint for creating objects. It defines the properties and methods that an object of that class will have. You can create a class using the ```class``` keyword:
+```
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  sayHello() {
+    console.log(`Hello, my name is ${this.name} and I'm ${this.age} years old.`);
+  }
+}
+```
+
+In this example, we define a ```Person``` class that has two properties (```name``` and ```age```) and a ```sayHello()``` method that logs a greeting message to the console. The ```constructor``` method is used to initialize the properties of the object.
+
+## Objects
+
+An object is an instance of a class. You can create an object using the ```new``` keyword:
+```
+const person1 = new Person("Alice", 25);
+const person2 = new Person("Bob", 30);
+
+person1.sayHello(); // "Hello, my name is Alice and I'm 25 years old."
+person2.sayHello(); // "Hello, my name is Bob and I'm 30 years old."
+```
+
+In this example, we create two ```Person``` objects (```person1``` and ```person2```) and call the ```sayHello()``` method on each of them.
+
+## Inheritance
+
+Inheritance is a mechanism that allows a class to inherit properties and methods from another class. In JavaScript, you can use the ```extends``` keyword to create a subclass that inherits from a superclass:
+```
+class Student extends Person {
+  constructor(name, age, major) {
+    super(name, age);
+    this.major = major;
+  }
+
+  sayHello() {
+    console.log(`Hello, my name is ${this.name}, I'm ${this.age} years old, and I'm studying ${this.major}.`);
+  }
+}
+```
+
+In this example, we define a ```Student``` class that extends the ```Person``` class. The ```Student``` class adds a new property (```major```) and overrides the ```sayHello()``` method to include the major in the greeting.
+
+## Encapsulation
+
+Encapsulation is a principle that aims to protect the internal state of an object from external access. In JavaScript, you can use closures to create private properties and methods:
+```
+class BankAccount {
+  constructor(balance) {
+    let _balance = balance; // private property
+
+    this.getBalance = () =&gt; _balance; // private method
+
+    this.deposit = amount =&gt; {
+      if (amount &gt; 0) {
+        _balance += amount;
+      }
+    };
+
+    this.withdraw = amount =&gt; {
+      if (amount &gt; 0 &amp;&amp; amount &lt;= _balance) {
+        _balance -= amount;
+      }
+    };
+  }
+}
+```
+
+In this example, we define a ```BankAccount``` class that has a private property (```_balance```) and two methods (```deposit()``` and ```withdraw()```) that modify the balance. The ```getBalance()``` method is a private method that returns the balance.
+
+## Polymorphism
+
+Polymorphism is a principle that allows different classes to implement the same method in different ways. In JavaScript, you can achieve polymorphism by defining a method with the same name in different classes:
+```
+class Shape {
+  getArea() {
+    throw new Error("getArea() method not implemented.");
+  }
+}
+
+class Circle extends Shape {
+  constructor(radius) {
+    super();
+    this.radius = radius;
+  }
+
+  getArea() {
+    return Math.PI * this.radius ** 2;
+  }
+}
+
+class Rectangle extends Shape {
+  constructor(width, height) {
+    super();
+    this.width = width;
+    this.height = height;
+  }
+
+  getArea() {
+    return this.width * this.height;
+  }
+}
+```
+
+In this example, we define a ```Shape``` class that has a ```getArea()``` method that throws an error if it's called. We also define two subclasses (```Circle``` and ```Rectangle```) that implement the ```getArea()``` method in a different way. The ```Circle``` class calculates the area of a circle, and the ```Rectangle``` class calculates the area of a rectangle.Conclusion
+
+## Abstraction in JavaScript
+
+Abstraction is the process of hiding implementation details while showing only the essential features of an object. In JavaScript, you can achieve abstraction by defining methods that are not accessible from outside the object.
+
+Here's an example:
+
+```
+function BankAccount(owner, balance) {
+  this.owner = owner;
+  this.balance = balance;
+  var transactions = [];
+
+  this.deposit = function(amount) {
+    this.balance += amount;
+    transactions.push({ type: "deposit", amount: amount });
+  };
+
+  this.withdraw = function(amount) {
+    if (this.balance >= amount) {
+      this.balance -= amount;
+      transactions.push({ type: "withdrawal", amount: amount });
+    } else {
+      console.log("Insufficient funds");
+    }
+  };
+
+  this.getTransactions = function() {
+    return transactions;
+  };
+}
+
+var myAccount = new BankAccount("Alice", 100);
+myAccount.deposit(50);
+myAccount.withdraw(25);
+
+console.log(myAccount.balance); // 125
+console.log(myAccount.getTransactions()); // [{ type: "deposit", amount: 50 }, { type: "withdrawal", amount: 25 }]
+```
+In this example, the ```BankAccount``` constructor function is used to create an object with an ```owner```, ```balance```, and ```transactions``` property. The ```deposit``` and ```withdraw``` methods are defined as part of the object, but the ```transactions``` property is not accessible from outside the object. The ```getTransactions``` method is defined to allow access to the ```transactions``` property, but only through a controlled interface.
+
+---------------------------------
+
+## Creating an Object in JavaScript
+
+To create an object in JavaScript, you can use the object literal syntax. Here is an example:
+
+```
+let person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 30,
+  eyeColor: "blue"
+};
+```
+
+In this example, we have created an object called ```person``` with four properties: ```firstName```, ```lastName```, ```age```, and ```eyeColor```.
+
+You can access these properties using dot notation or bracket notation. Here are examples of both:
+
+```
+console.log(person.firstName); // Output: "John"
+console.log(person["lastName"]); // Output: "Doe"
+```
+
+## Creating a Class in JavaScript
+
+To create a class in JavaScript, you can use the ```class``` keyword. Here is an example:
+```
+class Person {
+  constructor(firstName, lastName, age, eyeColor) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.eyeColor = eyeColor;
+  }
+}
+```
+
+In this example, we have created a class called ```Person``` with a constructor that takes four parameters: ```firstName```, ```lastName```, ```age```, and ```eyeColor```. The constructor then assigns these values to the corresponding properties of the class.
+
+## Creating an Object from a Class
+
+To create an object from a class, you can use the ```new``` keyword. Here is an example:
+```
+let person1 = new Person("John", "Doe", 30, "blue");
+```
+
+In this example, we have created an object called ```person1``` from the ```Person``` class, with the values "John", "Doe", 30, and "blue" passed as arguments to the constructor.
+
+## Class Methods
+
+In addition to properties, classes can also have methods. Here is an example of a class method in JavaScript:
+```
+class Person {
+  constructor(firstName, lastName, age, eyeColor) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.eyeColor = eyeColor;
+  }
+
+  getFullName() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+```
+
+In this example, we have added a method called ```getFullName``` to the ```Person``` class, which returns the full name of the person.
+
+
+
+
