@@ -402,3 +402,83 @@ const str = '   Hello World   ';
 const result = str.trim();
 console.log(result); // Output: "Hello World"
 ```
+
+-----------------------------
+
+# Conditional Statements in JavaScript
+Conditional statements allow you to execute different blocks of code depending on whether a certain condition is true or false. In JavaScript, there are three main types of conditional statements: ```if``` statements, ```else if``` statements, and ```switch``` statements.
+
+# If Statements
+
+The ```if``` statement is used to execute a block of code if a certain condition is true. Here is the basic syntax of an ```if``` statement in JavaScript:javascript
+```
+if (condition) {
+  // code to be executed if the condition is true
+}
+```
+
+Here is an example of an ```if``` statement that checks if a number is greater than 10:javascript
+```
+let number = 15;
+
+if (number &gt; 10) {
+  console.log("The number is greater than 10");
+}
+```
+
+## Else If Statements
+
+The ```else if``` statement is used to execute a different block of code if a previous condition was not true. Here is the basic syntax of an ```else if``` statement in JavaScript:javascript
+```javascript
+if (condition1) {
+  // code to be executed if condition1 is true
+} else if (condition2) {
+  // code to be executed if condition2 is true
+}
+```
+
+Here is an example of an ```else if``` statement that checks if a number is between 5 and 10:javascript
+```javascript
+let number = 7;
+
+if (number &lt; 5) {
+  console.log("The number is less than 5");
+} else if (number &gt; 10) {
+  console.log("The number is greater than 10");
+} else {
+  console.log("The number is between 5 and 10");
+}
+```Switch Statements
+
+The ```switch``` statement is used to execute different blocks of code depending on the value of a variable. Here is the basic syntax of a ```switch``` statement in JavaScript:javascript
+```javascript
+switch (variable) {
+  case value1:
+    // code to be executed if variable === value1
+    break;
+  case value2:
+    // code to be executed if variable === value2
+    break;
+  default:
+    // code to be executed if variable is not equal to any of the values
+}
+```
+
+Here is an example of a ```switch``` statement that checks the value of a variable and executes different blocks of code based on the value:javascript
+```javascript
+let fruit = "apple";
+
+switch (fruit) {
+  case "banana":
+    console.log("The fruit is a banana");
+    break;
+  case "apple":
+    console.log("The fruit is an apple");
+    break;
+  case "orange":
+    console.log("The fruit is an orange");
+    break;
+  default:
+    console.log("The fruit is not a banana, apple, or orange");
+}
+```
