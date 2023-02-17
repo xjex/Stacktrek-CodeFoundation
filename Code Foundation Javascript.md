@@ -5,6 +5,7 @@
 - Commenting in JavaScript
 - Variables
 - Data types
+- Arithmetic Operators
 
 ---------------------------------------
 
@@ -189,3 +190,10 @@ const cars = ["Saab", "Volvo", "BMW"];
 // Date object:
 const date = new Date("2022-03-25");
 ```
+------------------------------
+## [Arithmetic Operators](https://www.w3schools.com/js/js_arithmetic.asp)
+
+| Symbol | Description |
+| ----------- | ----------- |
+|+ | Addition|
+| ----------- | ----------- |
