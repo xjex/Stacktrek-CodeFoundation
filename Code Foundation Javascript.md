@@ -428,8 +428,9 @@ if (number &gt; 10) {
 
 ## Else If Statements
 
-The ```else if``` statement is used to execute a different block of code if a previous condition was not true. Here is the basic syntax of an ```else if``` statement in JavaScript:javascript
-```javascript
+The ```else if``` statement is used to execute a different block of code if a previous condition was not true. Here is the basic syntax of an ```else if``` statement in JavaScript:
+
+```
 if (condition1) {
   // code to be executed if condition1 is true
 } else if (condition2) {
@@ -437,8 +438,8 @@ if (condition1) {
 }
 ```
 
-Here is an example of an ```else if``` statement that checks if a number is between 5 and 10:javascript
-```javascript
+Here is an example of an ```else if``` statement that checks if a number is between 5 and 10:
+```
 let number = 7;
 
 if (number &lt; 5) {
@@ -448,10 +449,12 @@ if (number &lt; 5) {
 } else {
   console.log("The number is between 5 and 10");
 }
-```Switch Statements
+```
+## Switch Statements
 
-The ```switch``` statement is used to execute different blocks of code depending on the value of a variable. Here is the basic syntax of a ```switch``` statement in JavaScript:javascript
-```javascript
+The ```switch``` statement is used to execute different blocks of code depending on the value of a variable. Here is the basic syntax of a ```switch``` statement in JavaScript:
+
+```
 switch (variable) {
   case value1:
     // code to be executed if variable === value1
@@ -464,8 +467,9 @@ switch (variable) {
 }
 ```
 
-Here is an example of a ```switch``` statement that checks the value of a variable and executes different blocks of code based on the value:javascript
-```javascript
+Here is an example of a ```switch``` statement that checks the value of a variable and executes different blocks of code based on the value:
+
+```
 let fruit = "apple";
 
 switch (fruit) {
