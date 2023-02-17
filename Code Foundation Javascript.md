@@ -2,15 +2,15 @@
 
 ## Scopes
 - [Printing to Console](#Printing-to-console)
-- Commenting in JavaScript
-- Variables
-- Data types
-- Arithmetic Operators
-- String Manipulation
-- Conditional Statements
-- Loops
-- Functions 
-- Object-Oriented Programming
+- [Commenting in JavaScript](#commenting-in-javascript)
+- [Variables](#variables)
+- [Data types](#data-types)
+- [Arithmetic Operators](#arithmetic-operators)
+- [String Manipulation](#string-manipulation-in-javascript)
+- [Conditional Statements](#conditional-statements-in-javascript)
+- [Loops](#looping-in-javascript)
+- [Functions](#javascript-functions)
+- [Object-Oriented Programming](#object-oriented-programming-in-javascript)
 
 ---------------------------------------
 
