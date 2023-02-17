@@ -6,6 +6,8 @@
 - Variables
 - Data types
 - Arithmetic Operators
+- String Manipulation
+- Conditionals
 
 ---------------------------------------
 
@@ -410,14 +412,14 @@ Conditional statements allow you to execute different blocks of code depending o
 
 # If Statements
 
-The ```if``` statement is used to execute a block of code if a certain condition is true. Here is the basic syntax of an ```if``` statement in JavaScript:javascript
+The ```if``` statement is used to execute a block of code if a certain condition is true. Here is the basic syntax of an ```if``` statement in JavaScript:
 ```
 if (condition) {
   // code to be executed if the condition is true
 }
 ```
 
-Here is an example of an ```if``` statement that checks if a number is greater than 10:javascript
+Here is an example of an ```if``` statement that checks if a number is greater than 10:
 ```
 let number = 15;
 
@@ -486,3 +488,103 @@ switch (fruit) {
     console.log("The fruit is not a banana, apple, or orange");
 }
 ```
+----------------------------
+# Looping in JavaScript
+
+Looping is a programming construct that enables a block of code to execute repeatedly until a certain condition is met. In JavaScript, there are several types of loops available that we can use to achieve this.
+
+## ```for``` Loop
+
+The ```for``` loop is the most commonly used looping construct in JavaScript. It has three parts: the initialization, the condition, and the increment. The syntax of a ```for``` loop is as follows:
+
+```
+for (initialization; condition; increment) {
+  // code to be executed
+}
+```
+
+Here's an example that prints the numbers 1 through 5 using a ```for``` loop:
+
+```
+for (let i = 1; i &lt;= 5; i++) {
+  console.log(i);
+}
+```
+
+## ```while``` Loop
+
+The ```while``` loop is used when we do not know the exact number of iterations needed to execute a block of code. The syntax of a ```while``` loop is as follows:
+```
+while (condition) {
+  // code to be executed
+}
+```
+
+Here's an example that prints the numbers 1 through 5 using a ```while``` loop:
+```
+let i = 1;
+while (i &lt;= 5) {
+  console.log(i);
+  i++;
+}
+```
+
+## ```do-while``` Loop
+
+The ```do-while``` loop is similar to the ```while``` loop, but it ensures that the block of code is executed at least once before checking the condition. The syntax of a ```do-while``` loop is as follows:
+```
+do {
+  // code to be executed
+} while (condition);
+```
+
+Here's an example that prints the numbers 1 through 5 using a ```do-while``` loop:
+```
+let i = 1;
+do {
+  console.log(i);
+  i++;
+} while (i &lt;= 5);
+```
+
+## ```for...in``` Loop
+
+The ```for...in``` loop is used to loop through the properties of an object. The syntax of a ```for...in``` loop is as follows:
+```
+for (variable in object) {
+  // code to be executed
+}
+```
+
+Here's an example that prints the properties of an object using a ```for...in``` loop:
+```
+const person = {
+  name: "John",
+  age: 30,
+  gender: "male"
+};
+
+for (let property in person) {
+  console.log(property + ": " + person[property]);
+}
+```
+
+## ```for...of``` Loop
+
+The ```for...of``` loop is used to loop through the values of an iterable object, such as an array or a string. The syntax of a ```for...of``` loop is as follows:
+```
+for (variable of iterable) {
+  // code to be executed
+}
+```
+
+Here's an example that prints the elements of an array using a ```for...of``` loop:
+```
+const numbers = [1, 2, 3, 4, 5];
+
+for (let number of numbers) {
+  console.log(number);
+}
+```
+
+These are the different types of loops available in JavaScript that you can use to execute a block of code repeatedly.
