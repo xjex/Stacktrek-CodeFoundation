@@ -79,7 +79,7 @@ So, since times > 3 returns true, greeter is redefined  to "say Hello instead". 
 If you have used `greeter` in other parts of your code, you might be surprised at the output you might get. This will likely cause a lot of bugs in your code. This is why `let` and `const` are necessary.
 
 ---------------------------------------
-### `let` 
+## `let` 
 - now preferred for variable declaration. It's no surprise as it comes as an improvement to var declarations. It also solves the problem with var that we just covered.
 - let is block scoped
 A block is a chunk of code bounded by {}. A block lives in curly braces. Anything within curly braces is a block.
@@ -96,13 +96,13 @@ So a variable declared in a block with let  is only available for use within tha
     }
    console.log(hello) // hello is not defined
 ```
-### let can be updated but not re-declared.
+## let can be updated but not re-declared.
 - Just like `var` , a variable declared with `let` can be updated within its scope. Unlike var, a `let` variable cannot be re-declared within its scope.
 
-### Hoisting of let
+## Hoisting of let
 - Just like  `var`, `let` declarations are hoisted to the top. Unlike `var` which is initialized as `undefined`, the `let` keyword is not initialized. So if you try to use a `let` variable before declaration, you'll get a `Reference Error`.
 ---------------------------------------
-### `const`
+## `const`
 - Variables declared with the `const` maintain constant values. `const` declarations share some similarities with `let` declarations.
 
 ### const declarations are block scoped
@@ -150,7 +150,7 @@ This will update the value of `greeting.message` without returning errors.
 
 -----------------------------------
 
-## [Data types](https://www.w3schools.com/js/js_datatypes.asp)
+# [Data types](https://www.w3schools.com/js/js_datatypes.asp)
 
 JavaScript has 8 data types
 
@@ -163,7 +163,7 @@ JavaScript has 8 data types
 7. Symbol
 8. Object
 
-### The Object Datatype
+## The Object Datatype
 The object data type can contain:
 
 1. An object
@@ -193,7 +193,7 @@ const cars = ["Saab", "Volvo", "BMW"];
 const date = new Date("2022-03-25");
 ```
 ------------------------------
-## [Arithmetic Operators](https://www.w3schools.com/js/js_arithmetic.asp)
+# [Arithmetic Operators](https://www.w3schools.com/js/js_arithmetic.asp)
 
 | Symbol | Description |
 | ----------- | ----------- |
