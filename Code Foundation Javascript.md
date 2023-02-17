@@ -588,3 +588,76 @@ for (let number of numbers) {
 ```
 
 These are the different types of loops available in JavaScript that you can use to execute a block of code repeatedly.
+
+--------------------------
+
+# JavaScript Functions
+
+Functions are one of the building blocks of JavaScript. They are used to group a set of statements together to perform a specific task. Functions can be called multiple times throughout your code, and you can pass different arguments to them to produce different results.
+
+## Declaration Function
+
+This is the most common way to define a function in JavaScript. It has a name, a set of parameters (optional), and a body that contains the statements to be executed when the function is called.
+
+```
+function addNumbers(a, b) {
+  return a + b;
+}
+```
+
+## Anonymous Function
+
+An anonymous function is a function that doesn't have a name. It is usually assigned to a variable or used as a parameter to another function.
+```
+const addNumbers = function(a, b) {
+  return a + b;
+}
+```
+
+## Arrow Function
+
+An arrow function is a shorthand way of defining a function. It uses the ```=&gt;``` syntax and doesn't have a ```this``` keyword.
+```
+const addNumbers = (a, b) =&gt; a + b;
+```
+
+## Generator Function
+
+A generator function is a special type of function that can be paused and resumed. It uses the ```function*``` syntax and the ```yield``` keyword to control the flow of execution.
+```
+function* generateNumbers() {
+  yield 1;
+  yield 2;
+  yield 3;
+}
+```
+
+## Recursive Function
+
+A recursive function is a function that calls itself. It is useful for solving problems that can be broken down into smaller subproblems.
+```
+function factorial(n) {
+  if (n === 0) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
+  }
+}
+```
+
+## Higher-Order Function
+
+A higher-order function is a function that takes another function as an argument or returns a function as its result.
+```
+function add(a, b) {
+  return a + b;
+}
+
+function higherOrderFunction(func) {
+  return function(a, b) {
+    return func(a, b) * 2;
+  }
+}
+
+const doubledSum = higherOrderFunction(add);
+```
