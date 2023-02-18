@@ -426,7 +426,7 @@ Here is an example of an ```if``` statement that checks if a number is greater t
 ```
 let number = 15;
 
-if (number >; 10) {
+if (number > 10) {
   console.log("The number is greater than 10");
 }
 ```
@@ -449,7 +449,7 @@ let number = 7;
 
 if (number < 5) {
   console.log("The number is less than 5");
-} else if (number >; 10) {
+} else if (number > 10) {
   console.log("The number is greater than 10");
 } else {
   console.log("The number is between 5 and 10");
@@ -619,9 +619,9 @@ const addNumbers = function(a, b) {
 
 ## Arrow Function
 
-An arrow function is a shorthand way of defining a function. It uses the ```=>;``` syntax and doesn't have a ```this``` keyword.
+An arrow function is a shorthand way of defining a function. It uses the ```=>``` syntax and doesn't have a ```this``` keyword.
 ```
-const addNumbers = (a, b) =>; a + b;
+const addNumbers = (a, b) => a + b;
 ```
 
 ## Generator Function
@@ -727,16 +727,16 @@ class BankAccount {
   constructor(balance) {
     let _balance = balance; // private property
 
-    this.getBalance = () =>; _balance; // private method
+    this.getBalance = () => _balance; // private method
 
-    this.deposit = amount =>; {
-      if (amount >; 0) {
+    this.deposit = amount => {
+      if (amount > 0) {
         _balance += amount;
       }
     };
 
-    this.withdraw = amount =>; {
-      if (amount >; 0 &&;&&; amount <= _balance) {
+    this.withdraw = amount => {
+      if (amount > 0 && amount <= _balance) {
         _balance -= amount;
       }
     };
