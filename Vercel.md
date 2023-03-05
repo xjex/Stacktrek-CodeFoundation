@@ -104,6 +104,6 @@ User permissions allow us to offer an enhanced experience through information ab
 <br>
 
 ---
-### Links
+### Vercel Documentation
  
 >[Vercel Documentations ](https://vercel.com/docs)
