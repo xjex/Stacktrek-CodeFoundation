@@ -243,7 +243,7 @@ class Observer {
         this.subject.removeObserver(this);
     }
 }
-
+```
 ### Command Pattern
 
 The Command pattern is a behavioral pattern that turns a request into a standalone object that contains all information about the request. This object can then be passed to other objects that can execute the request. Here is an example implementation of Command pattern:
