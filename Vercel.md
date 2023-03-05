@@ -10,7 +10,7 @@ Vercel for GitHub automatically deploys your GitHub projects with [Vercel](https
 -   [GitHub Enterprise Server](https://vercel.com/docs/concepts/deployments/git/vercel-for-github#using-github-actions)
 
 ## [Deploying a GitHub Repository](https://vercel.com/docs/concepts/deployments/git/vercel-for-github#deploying-a-github-repository)
-
+The Deploying a Git repository guide outlines how to create a new Vercel Project from a GitHub repository, and enable automatic deployments on every branch push.
 ## [Changing the GitHub Repository of a Project](https://vercel.com/docs/concepts/deployments/git/vercel-for-github#changing-the-github-repository-of-a-project)
 
 If you'd like to connect your Vercel Project to a different GitHub repository or disconnect it, you can do so from the  [Git section](https://vercel.com/docs/v2/platform/projects#git)  in the Project Settings.
