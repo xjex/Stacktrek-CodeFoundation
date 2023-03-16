@@ -1,0 +1,8 @@
+react 
+node js
+tailwind
+pern 
+
+starter kit
+fullstack starter kit
+https://reactjs.org/docs/getting-started.html
